@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analisador de Emails IA</title>
+    <style>
+        body { font-family: Arial, sans-serif; background-color: #f4f7f6; margin: 0; padding: 20px; }
+        .container { max-width: 700px; margin: 0 auto; background: #fff; padding: 30px; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.05); }
+        h1 { color: #333; }
+        textarea { width: 100%; height: 150px; padding: 10px; border-radius: 4px; border: 1px solid #ddd; box-sizing: border-box; }
+        button { background-color: #007bff; color: white; padding: 12px 20px; border: none; border-radius: 4px; cursor: pointer; font-size: 16px; margin-top: 10px; }
+        button:hover { background-color: #0056b3; }
+        .resultado { margin-top: 20px; padding-top: 20px; border-top: 1px solid #eee; }
+        .loading { display: none; text-align: center; }
+        .badge { padding: 5px 10px; border-radius: 12px; font-weight: bold; color: white; }
+        .produtivo { background-color: #28a745; }
+        .improdutivo { background-color: #dc3545; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Analisador de Emails IA 🤖</h1>
+        <p>Cole o texto do seu email abaixo para classificar e gerar uma sugestão de resposta.</p>
+        
+        <textarea id="emailTexto" placeholder="Cole o conteúdo do email aqui..."></textarea>
+        <button onclick="analisar()">Analisar Email</button>
+
+        <div class="loading" id="loadingSpinner">Analisando... 🧠</div>
+        
+        <div class="resultado" id="resultado" style="display:none;">
+            <h3>Resultado da Análise</h3>
+            <p><strong>Classificação:</strong> <span id="classificacao" class="badge"></span></p>
+            <p><strong>Sugestão de Resposta:</strong></p>
+            <pre id="sugestao" style="background: #f9f9f9; padding: 10px; border-radius: 4px;"></pre>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
