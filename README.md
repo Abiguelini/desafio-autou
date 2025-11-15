@@ -8,8 +8,8 @@ Projeto desenvolvido como parte do desafio técnico da AutoU. A aplicação web 
 
 Acesse a aplicação em funcionamento e assista ao vídeo de demonstração:
 
-* **Aplicação no ar (Render):** **[https://desafio-autou.onrender.com](https://desafio-autou.onrender.com)**
-* **Vídeo Demonstrativo (YouTube):** **[COLOQUE SEU LINK DO YOUTUBE AQUI]**
+* **Aplicação no ar (Render):** **[https://desafio-autou.onrender.com]([https://desafio-autou.onrender.com](https://desafio-autou-fgyi.onrender.com/))**
+
 
 ---
 
